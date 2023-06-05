@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Lab_8.Controls"
+             x:Class="Lab_8.Views.AfterTomorrowPage"
+             Title="Послезавтра">
+    <ScrollView>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <controls:WeatherView x:Name="morningInfo" HorizontalOptions="Center" HeaderText="Утро"/>
+
+            <controls:WeatherView x:Name="dayInfo" HorizontalOptions="Center" HeaderText="День"/>
+
+            <controls:WeatherView x:Name="eveningInfo" HorizontalOptions="Center" HeaderText="Вечер"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

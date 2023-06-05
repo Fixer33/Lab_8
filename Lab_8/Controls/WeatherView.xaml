@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab_8.Controls.WeatherView"
+             Visual="Material">
+    <ContentView.Content>
+        <Frame BackgroundColor="#E0E0E0"
+               CornerRadius="10"
+               Margin="20"
+               Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Weather Information"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       HorizontalOptions="Center"
+                       FontSize="Title"
+                       Margin="0,0,0,20" 
+                       x:Name="headerText"/>
+
+                <Label Text="Погода"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       FontSize="Subtitle" />
+                <Label Text="Sunny"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       x:Name="weatherTypeLabel" />
+
+                <Label Text="Температура"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       FontSize="Subtitle" />
+                <Label Text="25°C"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       x:Name="temperatureLabel" />
+
+                <Label Text="По ощущениям"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       FontSize="Subtitle" />
+                <Label Text="28°C"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       x:Name="feelsLikeLabel" />
+
+                <Label Text="Давление"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       FontSize="Subtitle" />
+                <Label Text="1013 hPa"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       x:Name="pressureLabel" />
+
+                <Label Text="Влажность"
+                       Grid.Row="5"
+                       Grid.Column="0"
+                       FontSize="Subtitle" />
+                <Label Text="70%"
+                       Grid.Row="5"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       x:Name="humidityLabel" />
+
+                <Label Text="Скорость ветра"
+                       Grid.Row="8"
+                       Grid.Column="0"
+                       FontSize="Subtitle" />
+                <Label Text="10 km/h"
+                       Grid.Row="8"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       x:Name="windSpeedLabel" />
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
